@@ -25,7 +25,7 @@ app.use(express.static("public"));
 
 // Configure connection pool
 const pool = mysql.createPool({
-  connectionLimit: 10, // Adjust the limit as per your needs
+  connectionLimit: 5, // Adjust the limit as per your needs
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
