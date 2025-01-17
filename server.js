@@ -242,7 +242,7 @@ app.get("/getMyFavoritesCakes/:user_id", async (req, res) => {
   const results = await query(sql, [user_id])
     res.json({ success: true, Result: results });
   } catch (error) {
-    console.error("Error fetching favorites menus:", err);
+    console.error("Error fetching favorites menus:", error);
   }
 });
 
@@ -259,7 +259,7 @@ app.get("/getMyFavoritesCakes/:user_id", async (req, res) => {
         const results = await query(sql, [user_id])
           res.json({ success: true, Result: results });
         } catch (error) {
-          console.error("Error fetching cart cakes:", err);
+          console.error("Error fetching cart cakes:", error);
         }
       });
 // end manage cakes 
