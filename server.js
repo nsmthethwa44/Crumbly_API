@@ -14,7 +14,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ["https://crumblysite.netlify.app"],
+    origin: ["https://crumblysite.netlify.app/"],
     credentials: true,
     methods: ["POST", "GET", "PUT", "DELETE"],
   })
